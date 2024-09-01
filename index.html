@@ -3,64 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M&TDigital - Innovative iOS Applications</title>
+    <title>M&TDigital</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#apps">Apps</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
+    <main role="main">
         <section id="home" class="section hero">
             <div class="content">
-                <h1>M&TDigital</h1>
-                <p>Crafting Innovative iOS Applications</p>
-                <a href="#apps" class="cta-button">Explore Our Apps</a>
+                <h1 class="main-title">M&TDigital</h1>
+                <p class="hero-caption">Crafting Innovative iOS Applications</p>
+                <a href="#apps" class="cta-button">Check out our apps</a>
             </div>
         </section>
 
         <section id="about" class="section">
             <div class="content">
-                <h2>About Us</h2>
-                <p>M&TDigital is a cutting-edge software company specializing in creating powerful and intuitive iOS applications. Our mission is to enhance digital experiences through innovative solutions.</p>
+                <h2 class="section-title">About Us</h2>
+                <p class="section-text">M&TDigital is a cutting-edge software company specializing in creating powerful and intuitive iOS applications. Our mission is to enhance digital experiences through innovative solutions.</p>
             </div>
         </section>
 
         <section id="apps" class="section">
-            <div class="app-grid">
-                <div class="app-card">
-                    <img src="psychref-icon.png" alt="PsychRef Icon" class="app-icon">
-                    <h3>PsychRef</h3>
-                    <p>Your go-to reference for psychological concepts and theories.</p>
-                    <a href="https://apps.apple.com/ca/app/psychref/id6476989971" class="app-store-link" target="_blank" rel="noopener noreferrer">Download on App Store</a>
-                </div>
-                <div class="app-card">
-                    <img src="lumiere-icon.png" alt="Lumiere Icon" class="app-icon">
-                    <h3>Lumiere</h3>
-                    <p>Illuminate your mind with our innovative learning app.</p>
-                    <a href="https://apps.apple.com/ca/app/lumiere/id6503999291" class="app-store-link" target="_blank" rel="noopener noreferrer">Download on App Store</a>
-                </div>
-                <div class="app-card">
-                    <img src="psychoanalytica-icon.png" alt="Psychoanalytica Icon" class="app-icon">
-                    <h3>Psychoanalytica</h3>
-                    <p>Advanced tools for psychological analysis and insights.</p>
-                    <a href="https://apps.apple.com/ca/app/psychoanalytica/id6478535804" class="app-store-link" target="_blank" rel="noopener noreferrer">Download on App Store</a>
+            <div class="content">
+                <h2 class="section-title">Our Apps</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <a href="https://apps.apple.com/ca/app/psychref/id6476989971" target="_blank" rel="noopener noreferrer">
+                            <img src="psychref-icon.png" alt="PsychRef Icon" class="app-icon">
+                            <p>PsychRef</p>
+                        </a>
+                    </div>
+                    <div class="app-item">
+                        <a href="https://apps.apple.com/ca/app/lumiere/id6503999291" target="_blank" rel="noopener noreferrer">
+                            <img src="lumiere-icon.png" alt="Lumiere Icon" class="app-icon">
+                            <p>Lumiere</p>
+                        </a>
+                    </div>
+                    <div class="app-item">
+                        <a href="https://apps.apple.com/ca/app/psychoanalytica/id6478535804" target="_blank" rel="noopener noreferrer">
+                            <img src="psychoanalytica-icon.png" alt="Psychoanalytica Icon" class="app-icon">
+                            <p>Psychoanalytica</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section">
             <div class="content">
-                <h2>Get in Touch</h2>
+                <h2 class="section-title">Get in Touch</h2>
                 <form id="contact-form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
@@ -72,7 +64,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 M&TDigital. All rights reserved.</p>
+        <p>© 2024 M&TDigital. All rights reserved.</p>
     </footer>
 
     <script src="main.js"></script>

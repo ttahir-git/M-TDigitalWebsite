@@ -1,14 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
     // Intersection Observer for fade-in effect
     const fadeElems = document.querySelectorAll('.section');
     const appearOptions = {
@@ -29,17 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeElems.forEach(elem => {
         appearOnScroll.observe(elem);
-    });
-
-    // Hover effect for app cards
-    const appCards = document.querySelectorAll('.app-card');
-    appCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-10px)';
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0)';
-        });
     });
 
     // Typing effect for hero subtitle
