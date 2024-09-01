@@ -20,7 +20,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, #4a0e8f, #ff8c00);
+    background: linear-gradient(135deg, #380b6e, #d87600, #2e6ecc);
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -42,7 +42,7 @@ body {
     font-size: 8rem;
     letter-spacing: -2px;
     line-height: 1.2;
-    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    background: linear-gradient(45deg, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -53,7 +53,11 @@ body {
 
 .hero-caption {
     font-size: 2.5rem;
-    color: var(--text-color);
+    background: linear-gradient(45deg, #ffffff, #f0f0f0, #e0e0e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
     max-width: 800px;
     margin: 0 auto 3rem;
     text-align: center;
@@ -64,6 +68,11 @@ body {
     letter-spacing: -1px;
     margin-bottom: 2rem;
     text-align: center;
+    background: linear-gradient(45deg, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-text {
@@ -100,7 +109,7 @@ body {
 .app-grid {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -119,8 +128,8 @@ body {
 .app-icon {
     width: 100%;
     height: auto;
-    max-width: 350px;
-    border-radius: 25px;
+    max-width: 400px;
+    border-radius: 60px; /* Even more rounded corners */
     transition: all 0.3s ease;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -152,6 +161,12 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--text-color);
     font-size: 1.1rem;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: white;
+    opacity: 0.7;
 }
 
 #contact-form textarea {
@@ -187,10 +202,12 @@ footer {
     .app-grid {
         flex-direction: column;
         width: 100%;
+        gap: 3rem;
     }
 
     .app-icon {
-        max-width: 250px;
+        max-width: 300px;
+        border-radius: 50px; /* Adjusted for smaller screens */
     }
 }
 
@@ -209,9 +226,11 @@ footer {
     
     .app-grid {
         width: 95%;
+        gap: 3rem;
     }
 
     .app-icon {
-        max-width: 300px;
+        max-width: 350px;
+        border-radius: 55px; /* Adjusted for medium screens */
     }
 }
