@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
+                    access_key: '3180db0f-5107-4472-86d3-e60e7e813e65',
                     name: name,
                     email: email,
                     message: message,
                     subject: 'New contact form submission',
-                    to: 'ttahir@meandt.com'
+                    to: 'tahir612011@gmail.com'
                 })
             });
 

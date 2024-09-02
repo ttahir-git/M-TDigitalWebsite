@@ -84,7 +84,7 @@ body {
     -webkit-text-fill-color: transparent;
     max-width: 800px;
     margin: 0 auto 3rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .hero {
@@ -108,6 +108,10 @@ body {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(58, 134, 255, 0.2);
+}
+
+#apps .section-title {
+    margin-bottom: 3rem;  
 }
 
 .app-grid {
