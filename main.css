@@ -136,8 +136,8 @@ body {
 .app-icon {
     width: 100%;
     height: auto;
-    max-width: 350px; /* Reduced from 400px */
-    border-radius: 50px; /* Adjusted for smaller size */
+    max-width: 350px; 
+    border-radius: 50px; 
     transition: all 0.3s ease;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -231,8 +231,8 @@ footer {
     }
 
     .app-icon {
-        max-width: 250px; /* Reduced from 300px */
-        border-radius: 40px; /* Adjusted for smaller screens */
+        max-width: 250px; 
+        border-radius: 40px; 
     }
 }
 
@@ -255,7 +255,7 @@ footer {
     }
 
     .app-icon {
-        max-width: 300px; /* Reduced from 350px */
-        border-radius: 45px; /* Adjusted for medium screens */
+        max-width: 300px; 
+        border-radius: 45px; 
     }
 }
