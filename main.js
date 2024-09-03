@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (i < text.length) {
             heroSubtitle.textContent += text.charAt(i);
             i++;
-            setTimeout(typeWriter, 50);
+            setTimeout(typeWriter, 40);
         }
     }
 
